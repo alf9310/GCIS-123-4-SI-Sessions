@@ -1,6 +1,7 @@
 """
 Week 3 Session A: Turtle activity to build farmiliarity with turtle by creating 
 a suprised pikachu drawing.
+
 Concepts: Scope, Functions, Parameters, Incremental Developement, Turtle
 @author: Audrey Fuller
 Adapted from Zoe Bingham activity
@@ -13,10 +14,10 @@ Adapted from Zoe Bingham activity
 # Initialize static global variables for the colors of pikachu
 
 # Make a function to draw the base of a pikachu (Use given function below)
-# def draw_arc(degrees):
-#    for increment in range(180):
-#        t.forward(1)
-#        t.right(1)
+def draw_arc(degrees):
+    for increment in range(180):
+        t.forward(1)
+        t.right(1)
 
 # Make a function to draw the pikachu eyes
 
