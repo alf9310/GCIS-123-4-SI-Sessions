@@ -7,9 +7,6 @@ Concepts: Scope, Functions, Parameters, Incremental Developement, Turtle
 Adapted from Zoe Bingham activity
 """
 
-#In-class tree activity review
-import turtle as t
-
 #Surprised Pikachu Outline 
 
 # Import the library for turtle
