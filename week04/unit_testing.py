@@ -6,6 +6,7 @@ Session 4A: Introducing Return statements, unit testing, running pytest
 """
 
 import random # For dice game
+import turtle as t
 
 # What should we name the test file? What do we import?
 
@@ -20,7 +21,10 @@ def is_odd(n):
         :param int n: number
     :return boolean
     '''
-    pass
+    if(n % 2 == 1):
+        return True
+    
+    return False
 
 def is_even(n):
     '''
@@ -101,7 +105,30 @@ def who_won(round_1, round_2, round_3):
     #what function can we reuse here?
     pass
 
+
+def draw_circle(x, y, pen_color, fill_color, radius):
+    t.penup()
+    t.goto(x,y)
+    t.pencolor(pen_color)
+    t.pendown()
+    t.fillcolor(fill_color)
+    t.begin_fill()
+    t.circle(radius)
+    t.end_fill()
+    t.penup()
+    t.goto(x,y)
+
+def car_tire(x, y, size):
+    radius1 = size # Big Circle radius
+    radius2 = size/4 # Small Circle radius
+    draw_circle(x,y, "black", "gray", radius1)
+    draw_circle(x, y + radius1 - radius2, "black", "black", radius2)
+
+"""
 def main():
-    pass
+    car_tire(0, 0, 100)
+    car_tire(100, -100, 50)
+    input()
 
 main()
+"""
