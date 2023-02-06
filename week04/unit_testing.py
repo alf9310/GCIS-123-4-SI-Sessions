@@ -124,11 +124,9 @@ def car_tire(x, y, size):
     draw_circle(x,y, "black", "gray", radius1)
     draw_circle(x, y + radius1 - radius2, "black", "black", radius2)
 
-"""
 def main():
     car_tire(0, 0, 100)
     car_tire(100, -100, 50)
     input()
 
 main()
-"""
