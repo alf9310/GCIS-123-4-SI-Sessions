@@ -1,0 +1,53 @@
+"""
+Session 4B: Practice Practical 
+@author: Audrey Fuller (alf9310)
+"""
+
+import turtle as t
+
+def triangle(size, color):
+    t.penup()
+    t.pencolor("black")
+    t.pendown()
+    t.fillcolor(color)
+    t.begin_fill()
+    t.forward(size)
+    t.left(120)
+    t.forward(size)
+    t.left(120)
+    t.forward(size)
+    t.left(120)
+    t.end_fill()
+
+def draw_triangle(num, size):
+    while(num > 0):
+        counter = num
+        while counter > 0:
+            triangle(size, "blue")
+            t.forward(size)
+            print(num)
+            counter = counter - 1
+        t.right(180)
+        t.forward(size*num)
+        t.right(120)
+        t.forward(size)
+        t.right(60)
+        num = num - 1
+
+    
+
+
+
+
+def main():
+    t.speed(20)
+    num = input("Enter the # of bottom-row triangles ")
+    length = input("Enter the side length of each triangles ")
+
+    draw_triangle(int(num), int(length))
+    input()
+
+
+
+if __name__ == "__main__":
+    main()
