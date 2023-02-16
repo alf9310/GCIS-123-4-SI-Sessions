@@ -1,7 +1,7 @@
 """
 Bring cookies to class and have the students make the following functions.
 @author Audrey Fuller
-@author Zoe Bingham (expended off of )
+@author Zoe Bingham (expanded off of)
 """
 def give_cookie(name, number):
     print("Giving " + str(number) + " cookies to " + name)
