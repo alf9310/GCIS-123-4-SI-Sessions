@@ -47,7 +47,7 @@ def make_text_emoji(filename):
 
 def main():
     file1 = "data/haiku.txt"
-    file2 = "data/Emoticons.txt"
+    file2 = "data/emoticons.csv"
     print_line_by_line(file1)
     print_character_by_character(file1)
     print_word_by_word(file1)
