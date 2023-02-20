@@ -11,8 +11,12 @@ def print_line_by_line(filename):
     Parameters:
     :param string filename: the name of the file to be opened
     '''
+    with open(filename) as file:
+        for line in file:
+            print(line.strip() + "...")
+            print("...")
 
-    pass
+
 
 def print_character_by_character(filename):
     '''
@@ -54,9 +58,12 @@ def main():
     make_text_emoji(file2)
 
     # For errors
-    # print_line_by_line(hello!)
-    # print_line_by_line("testing, testing?")
-    # print_line_by_line("ಠ_ಠ")
+    try:
+        print_line_by_line(input("File Name: "))
+        print_line_by_line("testing, testing?")
+        print_line_by_line("ಠ_ಠ")
+    except FileNotFoundError as FNF:
+        print("Enter valid file name")
 
 if __name__ == "__main__":
     main()
