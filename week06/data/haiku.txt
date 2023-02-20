@@ -1,0 +1,3 @@
+Just a little test
+to try reading a file 
+a short haiku code
