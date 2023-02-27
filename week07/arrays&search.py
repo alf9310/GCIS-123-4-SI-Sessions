@@ -1,6 +1,7 @@
 """
 Session 7A: Arrays, Random & Linear Search Coding Activity.
 @author: Audrey Fuller
+@author: 
 """
 
 import arrays
@@ -23,7 +24,7 @@ Parameters:
     :param int array: the array of ints
 '''
 def find_first_duplicate(array):
-    pass
+    return
 
 '''
 Replaces characters in an array.
@@ -33,7 +34,7 @@ Parameters:
     :param int end: old character to replace
 '''
 def replace_array(array, new, old):
-    pass
+    return
 
 '''
 Fill an array with random numbers using the passed in seed
@@ -55,7 +56,7 @@ def linear_search(array, n):
 
 
 def main():
-    name = arrays.Array(5, 1)
+    name = arrays.Array(5, 0)
     print(name)
 
 if __name__ == '__main__':
