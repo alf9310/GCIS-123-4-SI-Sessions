@@ -4,6 +4,8 @@ Session 6A: File Reading, error handling & exceptions activities.
 @authod: Zoe Bingham (base printing code)
 """
 
+import re
+
 def print_line_by_line(filename):
     '''
     Open a file and print each line. Between each line, print a '...'
@@ -50,12 +52,23 @@ def make_text_emoji(filename):
     pass
 
 def main():
+    '''
+    string = "gdweftydf\\"
+    
+    if(re.findall("", string)):
+        print("A match!")
+    else:
+        print("no match")
+    '''
+
     file1 = "data/haiku.txt"
     file2 = "data/emoticons.csv"
     print_line_by_line(file1)
+    '''
     print_character_by_character(file1)
     print_word_by_word(file1)
     make_text_emoji(file2)
+    '''
 
     # For errors
     try:
