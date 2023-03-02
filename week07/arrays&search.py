@@ -22,9 +22,18 @@ Find the first duplicate element in a given array of integers.
 Return -1 If there are no such elements.
 Parameters:
     :param int array: the array of ints
+Return:
+    first duplicate
 '''
 def find_first_duplicate(array):
-    return
+    store = ""
+    no_dup = -1
+    for number in range(len(array)):
+        if str(array[number]) in store:
+            return array[number]
+        else:
+            store += str(array[number])
+    return no_dup
 
 '''
 Replaces characters in an array.
@@ -56,8 +65,8 @@ def linear_search(array, n):
 
 
 def main():
-    name = arrays.Array(5, 0)
-    print(name)
+    array = [100, 95, 50, 6, 1000]
+    print(find_first_duplicate(array))
 
 if __name__ == '__main__':
     main()
