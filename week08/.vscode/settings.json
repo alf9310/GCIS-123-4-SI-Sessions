@@ -1,0 +1,7 @@
+{
+    "python.testing.pytestArgs": [
+        "midterm-02-alf9310"
+    ],
+    "python.testing.unittestEnabled": false,
+    "python.testing.pytestEnabled": true
+}
