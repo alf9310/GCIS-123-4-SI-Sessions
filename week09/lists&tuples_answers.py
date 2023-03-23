@@ -23,7 +23,7 @@ def sort_list_last(tuples):
     return tuples
 
 '''Optional other solution using built-in sort'''
-def last(n): return n[-1]
+def last(n): return n[len(n) -1]
 
 def sort_list_last_key(tuples):
   return sorted(tuples, key=last)
