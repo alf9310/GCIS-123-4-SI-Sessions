@@ -20,10 +20,15 @@ def print_board(a_list):
 
 def main():
 	# use list comprehension to make a list of values from 1-50
-
+	num_list = [x for x in range(1, 51)]
+	print(num_list)
 	# use list comprehension to make a list of values A-Z
+	print([char for char in "ABCDEFGHIJKLMNOPQRSTUVWXYZ"])
+	print(['char' for char in "ABCDEFGHIJKLMNOPQRSTUVWXYZ"])
 
 	# use list comprehension to make a list of lists that hold increasing values
+	num_list = [[i for i in range(5)] for j in range(5)]
+	print(num_list)
 
 	# make a board
 	board = make_board(4)
